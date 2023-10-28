@@ -152,7 +152,7 @@ def main():
                     # Add a blinking cursor to simulate typing
                     message_placeholder.markdown(full_response + "▌")
                 
-            message_placeholder.markdown(full_response)
+            message_placeholder.markdown(response["answer"])
             for msg in response["chat_history"]:
                 st.session_state.messages.append({"role": msg.type, "content": msg.content})
             
