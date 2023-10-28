@@ -146,7 +146,7 @@ def main():
                 message_placeholder = st.empty()
                 full_response = ""
 
-                for chunk in response["answer"].split():
+                for chunk in response["answer"].split('\n'):
                     full_response += chunk + " "
                     time.sleep(0.05)
                     # Add a blinking cursor to simulate typing
