@@ -133,7 +133,7 @@ def main():
             with st.chat_message("Human"):
                 st.markdown(prompt)
             
-            llm = OpenAI()
+            llm = OpenAI(model_name='gpt-3.5-turbo')
             memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
             chain = ConversationalRetrievalChain.from_llm(llm, VectorStore.as_retriever(), memory=memory)
 
