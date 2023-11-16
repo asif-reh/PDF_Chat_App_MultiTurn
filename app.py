@@ -103,7 +103,7 @@ def main():
     st.title("Chat with PDF 💬")
     
     with st.chat_message('assistant'):
-                st.markdown("Hi. . . Upload File Lets Talk!!!")
+                st.markdown("Hi. . . Upload a PDF File in Sidebar, Lets Talk!!!")
 
     load_dotenv()
 
